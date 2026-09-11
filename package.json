@@ -1,0 +1,15 @@
+{
+  "name": "vikas-hi-tech-computer-institute",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack institute and online course selling website",
+  "scripts": {
+    "install-all": "npm install && npm --prefix client install && npm --prefix server install",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
